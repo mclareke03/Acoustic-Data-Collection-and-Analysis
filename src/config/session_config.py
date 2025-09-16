@@ -9,8 +9,10 @@ DEFAULT_CONFIG = {
     "rotation_speed": "",
     "rotor_configuration": "",
     "mic_position": "",
+    "volume_ratio": "",
     "session_name": ""
 }
+
 
 def load_last_config():
     if os.path.exists(CONFIG_PATH):

@@ -16,6 +16,7 @@ from analysis.plotting import (
     plot_avg_envelope_fft,
     plot_concat_time_domain,
 )
+
 from analysis.io import suggest_output_dir  # to decide where to save SVGs
 
 def browse_path(entry):

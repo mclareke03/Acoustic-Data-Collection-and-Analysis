@@ -4,3 +4,17 @@
 *.log
 build/
 .vscode/
+
+# Ignore recordings
+recordings/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#config file
+last_session.json

@@ -35,7 +35,7 @@ def get_percentage_dropdown(title, prompt, initial_value):
     label = ttk.Label(dropdown_win, text=prompt)
     label.pack(pady=10)
 
-    options = [f"{i}%" for i in range(0, 110, 10)]
+    options = ["N/A"] + [f"{i}%" for i in range(0, 110, 10)]
     combo = ttk.Combobox(dropdown_win, values=options, state="readonly")
     combo.set(initial_value if initial_value in options else options[0])
     combo.pack(pady=10)
@@ -58,7 +58,7 @@ def collect_session_info(last_config):
 
     machine_type = get_dropdown_input(
         "Session Setup", "Select machine type:",
-        ["Oil-Free screw compressor", "Oil-Injected screw compressor"],
+        ["Oil-Free screw compressor", "Oil-Injected screw compressor", "Balanced Fan"],
         last_config["machine_type"]
     )
 
